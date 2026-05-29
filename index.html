@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Herman — AI Agent pessoal de Hermínio Júnior">
+    <title>Herman — AI Agent</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<div class="chat-container">
+
+    <div class="top-bar">
+        <div class="bot-info">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+                <h1>Herman</h1>
+                <p>Assistente de Hermínio Júnior · Online</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-box" id="chat-box">
+        <div class="bot-message">
+            Olá! Sou o <strong>Herman</strong>, o seu assistente pessoal.
+            Posso dizer quem me criou, quando fui criado e os dados do meu criador
+            (idade, telefone, morada, profissão, etc.).
+            <br><br>
+            Experimente uma sugestão abaixo ou escreva a sua pergunta.
+        </div>
+    </div>
+
+    <div class="suggestions">
+        <button type="button" onclick="sendSuggestion('Quem te criou?')">Quem te criou?</button>
+        <button type="button" onclick="sendSuggestion('Quando foste criado?')">Data de criação</button>
+        <button type="button" onclick="sendSuggestion('Dados pessoais do criador')">Dados do criador</button>
+    </div>
+
+    <div class="input-area">
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Pergunte qualquer coisa..."
+            autocomplete="off"
+            aria-label="Mensagem para o chatbot"
+        >
+        <button type="button" onclick="sendMessage()" aria-label="Enviar mensagem">➤</button>
+    </div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
