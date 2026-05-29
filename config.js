@@ -15,8 +15,8 @@ const CHATBOT_CONFIG = {
     nomeCurto: "Hermínio Júnior",
     dataNascimento: "10 de novembro de 2002",
     idade: 24,
-    telefone: "(+258) 84 000 0000", // ← substitua pelo seu número real
-    email: "herminio.junior@email.com", // opcional — substitua se quiser
+    telefone: "(+258) 871278114", 
+    email: "herminioalfeujunior@gmail.com", 
     moradaNascimento: "Xai-Xai, Moçambique",
     moradaAtual: "Tete, Moçambique",
     moradaCompleta:
